@@ -100,25 +100,22 @@
     \begin{adjustwidth}{
         0 cm + 0.00001 cm
     }{
-        0 cm + 0.00001 cm
+        2.55 cm
     }
 }{
     \end{adjustwidth}
 } % new environment for one column entries
 
 \newenvironment{twocolentry}[2][]{
-    \onecolentry
     \def\secondColumn{#2}
     \setcolumnwidth{\fill, 4.5 cm}
     \begin{paracol}{2}
 }{
     \switchcolumn \raggedleft \secondColumn
     \end{paracol}
-    \endonecolentry
 } % new environment for two column entries
 
 \newenvironment{threecolentry}[3][]{
-    \onecolentry
     \def\thirdColumn{#3}
     \setcolumnwidth{, \fill, 4.5 cm}
     \begin{paracol}{3}
@@ -126,7 +123,6 @@
 }{
     \switchcolumn \raggedleft \thirdColumn
     \end{paracol}
-    \endonecolentry
 } % new environment for three column entries
 
 \newenvironment{header}{
